@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+@{
+    var site = Model.Root();
+    var selection = site.Children.Where(x => x.IsVisible());
+}
+<!-- uncomment this line if you don't want it to appear in the top navigation -->
+
+<a class="min-link" href="http://localhost:49846//sDKS/">SDK'S</a>
+<a class="min-link" href="http://localhost:49846/pricing/">Pricing</a>
+<a class="min-link" href="http://localhost:49846/contact/">Contact</a>
+<a class="min-link" href="http://localhost:49846/signIn/">Sign In</a>
