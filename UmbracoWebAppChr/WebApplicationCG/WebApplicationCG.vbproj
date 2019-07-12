@@ -444,10 +444,18 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Controllers\LoginController.cs" />
+    <Content Include="Controllers\RegisterController.cs" />
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="Global.asax" />
     <Content Include="Media\cj2j0ov5\header-graphics.png" />
     <Content Include="Media\hsljmkaa\footer-graphics.png" />
+    <Content Include="Models\RegisterModel.cs" />
+    <Content Include="Umbraco\Views\membertypes\create.html" />
+    <Content Include="Umbraco\Views\membertypes\delete.html" />
+    <Content Include="Umbraco\Views\membertypes\edit.html" />
+    <Content Include="Umbraco\Views\membertypes\move.html" />
+    <Content Include="Umbraco\Views\membertypes\views\design\design.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -523,6 +531,9 @@
   <ItemGroup>
     <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\vb\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\vb\Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

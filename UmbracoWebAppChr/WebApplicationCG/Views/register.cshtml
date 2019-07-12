@@ -1,0 +1,9 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using MemberAPI_LiveDemo.Models
+@{
+	Layout = "master.cshtml";
+}
+
+@* the fun starts here *@
+<!-- Render the Registration Form Here -->
+        @{Html.RenderPartial("~/Views/Partials/RegisterPartials.cshtml", new RegisterModel());}

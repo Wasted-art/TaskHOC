@@ -1,0 +1,32 @@
+﻿@using MemberAPI_LiveDemo.Controllers
+@model MemberAPI_LiveDemo.Models.RegisterModel
+
+@using (Html.BeginUmbracoForm<RegisterController>("Register"))
+{
+@Html.AntiForgeryToken()
+@Html.ValidationSummary(true)
+
+<fieldset>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Name)
+    </div>
+
+    <div class="editor-label">
+        @Html.EditorFor(model => model.Name)
+        @Html.ValidationMessageFor(model => model.Name)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Email)
+    </div>
+
+    <div class="editor-label">
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+
+    <div class="editor-label">
+
+    </div>
+</fieldset>
+}
